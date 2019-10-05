@@ -13,11 +13,11 @@ public interface Action extends Runnable, AutoCloseable {
      * Запускает потоковый объект на исполнение в отдельном
      * потоке исполнения.
      */
-    default void start() {
+    default void start() throws Exception {
         /*
          * TODO №1 Реализуйте метод start интерфейса Action.
          */
-        throw new UnsupportedOperationException("Not implemented yet!");
+        this.run();
+        this.close();
     }
-    
 }

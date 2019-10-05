@@ -1,5 +1,7 @@
 package ru.avalon.java.ocpjp.labs;
 
+import ru.avalon.java.ocpjp.labs.actions.Action;
+import ru.avalon.java.ocpjp.labs.actions.FileCopyAction;
 import ru.avalon.java.ocpjp.labs.console.ConsoleUI;
 
 import java.io.IOException;
@@ -44,6 +46,8 @@ public class Main extends ConsoleUI<Commands> {
                 /*
                  * TODO №6 Обработайте команду copy
                  */
+                FileCopyAction copyAction = new FileCopyAction();
+                copyAction.run();
                 break;
             case move:
                 /*
